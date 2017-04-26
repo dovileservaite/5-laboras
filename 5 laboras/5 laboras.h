@@ -34,8 +34,8 @@ namespace My5laboras {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Label^  etikete;
-	private: System::Windows::Forms::Button^  button1;
+
+
 	protected:
 
 	protected:
@@ -53,40 +53,16 @@ namespace My5laboras {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->etikete = (gcnew System::Windows::Forms::Label());
-			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
-			// 
-			// etikete
-			// 
-			this->etikete->AutoSize = true;
-			this->etikete->Location = System::Drawing::Point(100, 57);
-			this->etikete->Name = L"etikete";
-			this->etikete->Size = System::Drawing::Size(45, 13);
-			this->etikete->TabIndex = 0;
-			this->etikete->Text = L"skaicius";
-			// 
-			// button1
-			// 
-			this->button1->Location = System::Drawing::Point(90, 137);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(75, 23);
-			this->button1->TabIndex = 1;
-			this->button1->Text = L"button1";
-			this->button1->UseVisualStyleBackColor = true;
-			this->button1->Click += gcnew System::EventHandler(this, &My5laboras::button1_Click);
 			// 
 			// My5laboras
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(284, 261);
-			this->Controls->Add(this->button1);
-			this->Controls->Add(this->etikete);
 			this->Name = L"My5laboras";
 			this->Text = L"My5laboras";
 			this->ResumeLayout(false);
-			this->PerformLayout();
 
 		}
 #pragma endregion
