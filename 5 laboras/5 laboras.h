@@ -34,6 +34,8 @@ namespace My5laboras {
 				delete components;
 			}
 		}
+	private: System::Windows::Forms::MonthCalendar^  kalendorius;
+	protected:
 
 
 	protected:
@@ -53,21 +55,24 @@ namespace My5laboras {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			this->kalendorius = (gcnew System::Windows::Forms::MonthCalendar());
 			this->SuspendLayout();
+			// 
+			// kalendorius
+			// 
+			this->kalendorius->Location = System::Drawing::Point(103, 99);
+			this->kalendorius->Name = L"kalendorius";
+			this->kalendorius->TabIndex = 0;
 			// 
 			// My5laboras
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(284, 261);
+			this->ClientSize = System::Drawing::Size(299, 279);
+			this->Controls->Add(this->kalendorius);
 			this->Name = L"My5laboras";
 			this->Text = L"My5laboras";
 			this->ResumeLayout(false);
 
 		}
-#pragma endregion
-	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-		etikete->Text = "Raide";
 	}
-	};
-}
